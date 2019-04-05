@@ -1,4 +1,4 @@
-interface IMovies {
+export interface IMovies {
     id: number,
     title: string,
     poster: string,
@@ -7,6 +7,6 @@ interface IMovies {
     year: number,
     director: string,
     actors: Array<string>,
-    hours: Array<string>,
-    room: number
+    hours?: Array<string>,
+    room?: number
 }
